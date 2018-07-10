@@ -22,7 +22,7 @@ questions = ["Переживаете ли вы в ожидании важной 
 def game
   count = 0
   for item in questions do
-    puts item
+    item
     answer = 100
     until answer >= 0 && answer <= 2
       puts "Ответ: 1 - да, 0 - нет, 2 - иногда"
@@ -65,7 +65,7 @@ end
 
 
 def answer(message)
-  if message == '/start'
+  if message.text == '/start'
     "Привет-привет, #{message.from.first_name}"
     "Сыграем в игру..."
   else
