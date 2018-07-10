@@ -66,8 +66,9 @@ end
 
 def answer(message)
   if message.text == '/start'
-    "Привет-привет, #{message.from.first_name}"
-    "Сыграем в игру..."
+    "Привет-привет, #{message.from.first_name}
+    Сыграем в игру..."
+   
   else
     "... набери ..."
   end
