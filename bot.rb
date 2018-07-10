@@ -69,7 +69,7 @@ def answer(message)
     "Привет-привет, #{message.from.first_name}"
     "Сыграем в игру..."
   else
-    "... набери /start"
+    "... набери ..."
   end
 end
 
